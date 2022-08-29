@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+let temp = 28;
+let min = 24;
+let max = 35;
+let time = "mid"
+
+if(temp < 12 || (min < 12  &&  time === "late")){
+
+    console.log("Don't go out")
+}
+else if(min < 12 &&  time ==="late"){
+
+    console.log("don't go out")
+}else if(temp > 30){
+
+    console.log("dont go out")
+}else if( max > 30 && time==="early" )
+{
+    console.log("dont go outside")
+}else{
+    console.log("weather looks good you can go outside")
+}
+    </script>
+</body>
+</html>
