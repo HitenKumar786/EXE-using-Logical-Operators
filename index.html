@@ -7,29 +7,82 @@
     <title>Document</title>
 </head>
 <body>
+<!-- 
+logical OR(||) AND(&&) 
+    \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+  <div class="Whole">
+
+        <div class="title">
+
+            <h2>Should I go Outside ?</h2>
+
+        </div>
+
+        <div class="form">
+
+            <form onsubmit="exe(); return false">
+
+        <input type="number" name="Temperture" id="num" placeholder="Enter current Temperture">
+
+    <br><br>
+
+    <input type="text" name="time" id="time " placeholder="Enter Current Time">
+
+
+    <br><br>
+
+    <button type="submit" class="button" onclick="exe"> Check </button>
+
+</form>
+</div>
+
+<div class="resultcss">
+
+    <h3 id="result">   </h3>
+
+</div>
+
+
+<script>
+
+function exe() {
+
+
+
+let temp = +(document.getElementById("num").value)
+let time = (document.getElementById("time").value)
+
+
+if(temp = 12 || (temp < 12  &&  time === "late")){
+
+   document.getElementById("result").innerHTML = "Don't Go OutSide";
+}
+else if(temp < 12 &&  time ==="late"){
+    document.getElementById("result").innerHTML = "Don't Go OutSide";
     
-    <script>
-let temp = 28;
-let min = 24;
-let max = 35;
-let time = "mid"
-
-if(temp < 12 || (min < 12  &&  time === "late")){
-
-    console.log("Don't go out")
-}
-else if(min < 12 &&  time ==="late"){
-
-    console.log("don't go out")
 }else if(temp > 30){
-
-    console.log("dont go out")
-}else if( max > 30 && time==="early" )
+    
+    document.getElementById("result").innerHTML = "Don't Go OutSide";
+}else if( temp > 30 && time==="early" )
 {
-    console.log("dont go outside")
+    document.getElementById("result").innerHTML = "Don't Go OutSide";
 }else{
-    console.log("weather looks good you can go outside")
-}
+    document.getElementById("result").innerHTML = "weather looks good you can go outside";
+}} 
     </script>
+</div> 
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+-->
+
+not operator
+<script>
+let isOpen= false;
+
+if(!isOpen){
+
+
+}
+</script>
 </body>
 </html>
